@@ -29,9 +29,9 @@ export const OptionsContainer = styled.div`
 `;
 
 export const OptionLink = styled(Link)`
-  ${OptionContainerStyles}
+  ${OptionContainerStyles};
 `;
 
 export const OptionDiv = styled(Link)`
-  ${OptionContainerStyles}
+  ${OptionContainerStyles};
 `;

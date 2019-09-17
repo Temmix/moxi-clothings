@@ -6,7 +6,7 @@ const onToken = token => {
   alert("Payment was successful");
 };
 
-const StripeCheckoutButton = ({ price }) => {
+const StripeCheckoutButton = ({ price, resetCart }) => {
   const priceForStripe = price * 100;
   const publishableKey = "pk_test_A3xeVYv1QYnMVXv9I31ePwKj00XacYj3hp";
 
@@ -21,6 +21,7 @@ const StripeCheckoutButton = ({ price }) => {
       amount={priceForStripe}
       panelLabel="Pay Now"
       token={onToken}
+      closed={() => resetCart()}
       stripeKey={publishableKey}
       currency="GBP"
     />
