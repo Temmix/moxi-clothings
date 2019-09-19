@@ -5,9 +5,9 @@ import { createStructuredSelector } from "reselect";
 
 import HomePage from "./pages/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
-import CheckoutPage from "./pages/checkout/checkout.component";
+import { default as CheckoutPage } from "./pages/checkout/checkout.container";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import Header from "./components/header/header.component";
+import { default as Header } from "./components/header/header.container";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
