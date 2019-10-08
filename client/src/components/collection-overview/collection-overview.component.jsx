@@ -8,6 +8,7 @@ import "./collection-overview.styles.scss";
 const CollectionOverview = ({ collections }) => {
   console.log("collection from collection overview ");
   console.log(collections);
+
   return (
     <div className="colletions-overview">
       {collections.map(({ id, ...otherCollectionProps }) => (
