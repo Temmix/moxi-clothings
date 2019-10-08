@@ -1,0 +1,9 @@
+HOW TO LAUNCH THE APP.
+
+If new Branch
+npm install
+cd client 
+npm install
+
+If not new Branch
+npm run dev --- (This will spins up the server and client at the same time)
