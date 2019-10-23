@@ -61,6 +61,7 @@ class App extends React.Component {
   }
 }
 
+// this is the normal way of connect redux to react and mapping it
 // const mapStateToProps = state => ({
 //   currentUser: state.user.currentUser
 // });
